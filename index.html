@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Tangerine">
+  <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <title>Document</title>
+  <style>
+    /* .header{
+      background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url('./images/slide-3.jpg');
+    } */
+    /* #logo{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      font-weight: bolder;
+      color: orange;
+    } */
+    content{
+      padding-left: 40px;
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+    /* #content-sec{
+      margin-top: 50px;
+      margin-bottom: 80px;
+      clear: both;
+    } */
+    /* #content-sec #img{
+          min-height: 400px;
+          position: relative;
+    }
+    .content ul li{
+      list-style: none;
+    } */
+    /* #why-me .box{
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px 50px;
+    }
+    #why-me .box:hover{
+      background-color: orange;
+      color: white;
+
+    }
+    .gallery-item{
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    }
+    .gallery-item img{
+      max-width: 100%;
+      height: auto;
+      transition: all ease-in-out 0.4s;
+    } */
+    #contact-us{
+      margin-top: 40px;
+    }
+    .contact-box{
+      margin-top: 30px;
+      margin-left: 80px;
+      margin-right: 80px;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      padding: 40px 40px;
+    }
+    .php-email-form{
+      width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    padding: 30px;
+    background: #fff;
+    }
+    .php-email-form input{
+      border-radius: 0px;
+    }
+    .footer-icons i{
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 4px;
+      padding-bottom: 6px;
+      background: #46423b;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+    }
+    #footer{
+      background-color: #35322d;;
+      color: white;
+      padding: 30px 0px;
+    }
+    .footer-icons{
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+    #chef-staff .image-fluid{
+      max-width: 100%;
+    height: auto;
+    }
+    .chefs .member {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+.chefs .member .member-info {
+    position: absolute;
+    bottom: -80px;
+    left: 20px;
+    right: 20px;
+    background: #fff;
+    padding: 20px 0;
+    color: #433f39;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+  <!-- <section id="header">
+  <div class="header">
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="navbar-item" id="logo">Delicious</li>
+      </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item px-lg-2">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item px-lg-2">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item px-lg-2">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item px-lg-2">
+            <a class="nav-link" href="#">Specials</a>
+          </li>
+          <li class="nav-item px-lg-2">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item px-lg-2">
+            <a class="nav-link" href="#">Chefs</a>
+          </li>
+          <li class="nav-item px-lg-2">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item dropdown px-lg-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item px-lg-2">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item px-lg-2"><button class="btn btn-light" style="background-color: orange;" type="button">Book Table</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-xxl py-5 hero-header mb-5">
+    <div class="container my-5 py-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="display-3 text-white animated slideInLeft">Delicious Restaurent</h1>
+          <p class="text-white animated slideInLeft mb-4 pb-2">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
+             Similique ea voluptatem. Esse doloremque accusamus re ellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book a table</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section>
+  <div class="container-fluid" id="content-sec">
+    <div class="row">
+  <div class="col-lg-5" id="img" style="background: url('./images/about.jpg');">
+  </div>
+  <div class="col-lg-7 justify-content-center align-items-center">
+    <div class="content">
+    <h3 style="font-family: Satisfy, sans-serif;">Eum ipsam laborum deleniti velit pariatur architecto aut nihil</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+       ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <ul>
+          <li><i class="bi bi-chevron-double-right" style="color: orange;"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+          <li><i class="bi bi-chevron-double-right" style="color: orange;"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+          <li><i class="bi bi-chevron-double-right" style="color: orange;"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </li>
+        </ul>
+        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<div class="container-fluid" id="why-me">
+  <div class="text-center">
+    <h2>Why choose Our Restaurant</h2>
+    <p class="lead">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est 
+      adipisci expedita at voluptas atque vitae autem.</p>
+  </div>
+  <div class="row my-5">
+    <div class="col-lg-4">
+      <div class="box">
+           <h2>01</h2>
+           <h2 class="py-2">Lorem Ipsum</h2>
+           <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat.
+             Et consectetur ducimus vero placeat</p>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="box">
+        <h2>02</h2>
+        <h2 class="py-2">Repellat Nihil</h2>
+        <p>Dolorem est fugiat occaecati voluptate velit esse.
+           Dicta veritatis dolor quod et vel dire leno para dest</p>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="box">
+        <h2>03</h2>
+        <h2 class="py-2">Ad ad velit qui</h2>
+        <p>Molestiae officiis omnis illo asperiores.
+           Aut doloribus vitae sunt debitis quo vel nam quis</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="container" style="margin-top: 80px;">
+  <div class="text-center">
+    <h2>Some Photos of our restaurent</h2>
+    <p class="lead">Ut possimus qui ut temporibus culpa
+       velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+  </div>
+  <div class="row g-0">
+    <div class="col-lg-3 col-md-4">
+      <div class="gallery-item">
+      <img src="./images/gallery-1.jpg">
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-4">
+      <div class="gallery-item">
+      <img src="./images/gallery-2.jpg">
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-4">
+      <div class="gallery-item">
+      <img src="./images/gallery-3.jpg">
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-4">
+      <div class="gallery-item">
+      <img src="./images/gallery-4.jpg">
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-4">
+      <div class="gallery-item">
+      <img src="./images/gallery-5.jpg">
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-4">
+      <div class="gallery-item">
+      <img src="./images/gallery-6.jpg">
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-4">
+      <div class="gallery-item">
+      <img src="./images/gallery-7.jpg">
+    </div>
+    </div>
+    <div class="col-lg-3 col-md-4">
+      <div class="gallery-item">
+      <img src="./images/gallery-8.jpg">
+    </div>
+    </div>
+  </div>
+</div>
+<section id="chef-staff" class="chefs">
+  <div class="container">
+    <div class="section-title" style="text-align: center; margin-bottom: 30px;">
+      <h2>Our Proffesional <span>Chefs</span></h2>
+      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="member">
+          <div class="pic"><img src="images/chefs-1.jpg" class="img-fluid"></div>
+          <div class="member-info">
+            <h4>Walter White</h4>
+            <span>Master Chef</span>
+            <div class="social">
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="member">
+          <div class="pic"><img src="images/chefs-2.jpg" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Sarah Jhonson</h4>
+            <span>Patissier</span>
+            <div class="social">
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="member">
+          <div class="pic"><img src="images/chefs-3.jpg" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>William Anderson</h4>
+            <span>Cook</span>
+            <div class="social">
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section id="contact-us">
+  <div class="container-fluid">
+    <div class="container text-center">
+      <h3>Contact Us</h3>
+      <p>Ut possimus
+         qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at 
+         voluptas atque vitae autem.</p>
+    </div>
+    <div class="container me-3">
+      <div class="row">
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-box">
+   <div class="row">
+    <div class="col-lg-3 col-md-6 pb-2">
+      <h3><i class="bi bi-geo-alt" style="color: orange;"></i> Location</h3>
+      <p>A108 Adam Street <br>
+        New York, NY 535022</p>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <h3><i class="bi bi-clock" style="color: orange; font-size: 25px;"></i> Open Hours:</h3>
+      <p>Monday-Saturday: <br>
+        11:00 AM - 2300 PM</p>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <h3><i class="bi bi-envelope" style="color: orange; font-size: 25px;"></i> Email:</h3>
+      <p>info@example.com
+        contact@example.com</p>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <h3><i class="bi bi-envelope" style="color: orange; font-size: 25px;"></i> Call:</h3>
+      <p>+1 5589 55488 51 <br>
+        +1 5589 22475 14</p>
+    </div>
+   </div>
+   <form class="php-email-form">
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+      </div>
+      <div class="col-md-6 form-group mt-3 mt-md-0">
+        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+      </div>
+    </div>
+    <div class="form-group mt-3">
+      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+    </div>
+    <div class="form-group mt-3">
+      <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+    </div>
+    <div class="text-center"><button type="submit" class="btn btn-light mt-3" style="background-color: orange; color: white;">Send Message</button></div>
+  </form>
+  </div>
+</section>
+<section id="footer">
+  <div class="container-fluid text-center">
+    <h3>Delicious</h3>
+    <p>Et aut eum quis fuga eos sunt ipsa nihil.
+       Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <div class="footer-icons">
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-linkedin"></i>
+      </div>
+      <h6>© Copyright <Strong>Delicious.</Strong> All Rights Reserved</h6>
+      <h6>Designed by <span style="color: orange;"> BootstrapMade</span></h6>
+  </div>
+</section>
+<section id="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="p-5">
+        <h2>carousel item</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, totam?</p>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+  <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+</body>
+</html>
